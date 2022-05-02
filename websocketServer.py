@@ -13,8 +13,8 @@ async def accept(websocket, path):
         # コンソールに出力
         print("receive : " + data)
         # クライアントでechoを付けて再送信する。
-        # await websocket.send("echo : " + data)
-        await websocket.send(input(">"))
+        await websocket.send("echo : " + data)
+        # await websocket.send(input(">"))
 
 # WebSocketサーバー生成。ホストはlocalhost、portは9998に生成する。
 start_server = websockets.serve(accept, "localhost", 9998)
