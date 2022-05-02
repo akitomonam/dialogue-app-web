@@ -1,6 +1,6 @@
 # 対話システム(WEB)
 ## 使い方
-サーバー起動
+サーバープログラム起動
 ```
 python3 websocketServer.py
 ```
