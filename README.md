@@ -1,5 +1,9 @@
 # 対話システム(WEB)
 ## 使い方
+websocketのインストール
+```
+pip install websockets
+```
 サーバープログラム起動
 ```
 python3 websocketServer.py
