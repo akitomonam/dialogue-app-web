@@ -11,3 +11,5 @@ python3 websocketServer.py
 index.htmlをブラウザで開く
 ## 参考
 https://www.nowonbun.com/247.html
+## 参考になるかも
+https://www.raspberrypirulo.net/entry/websocket-server

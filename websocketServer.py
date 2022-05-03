@@ -18,6 +18,7 @@ async def accept(websocket, path):
 
 # WebSocketサーバー生成。ホストはlocalhost、portは9998に生成する。
 start_server = websockets.serve(accept, "localhost", 9998)
+# start_server = websockets.serve(accept, "172.30.24.52", 9998)
 # 非同期でサーバを待機する。
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()

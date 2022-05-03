@@ -1,5 +1,8 @@
 // ウェブサーバを接続する。
-var webSocket = new WebSocket("ws://localhost:9998");
+URL = "ws://localhost:9998"
+// URL = "ws://172.21.65.74:9998"
+// URL = "ws://172.30.24.52:9001"
+var webSocket = new WebSocket(URL);
 // ウェブサーバから受信したデータを出力するオブジェクトを取得する。
 var messageTextArea = document.getElementById("messageTextArea");
 // ソケット接続すれば呼び出す関数。
