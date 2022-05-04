@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Dialogue System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scroll_content_sample/main.css">
 </head>
 
 <body>
-    <form>
+    <div>
+        <div style="text-align:center;">
+            <button id="start-btn">start</button>
+            <button id="stop-btn">stop</button>
+            <button id="clear-rec-btn">clear voice recognition</button>
+            <div style="text-align: center;">音声認識結果</div>
+            <!-- <input id="result" oninput="checkMsg()"> -->
+            <!-- <div id="result" oninput="checkMsg()"></div> -->
+            <div id="result"></div>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <!-- <form> -->
         <!-- サーバーにメッセージを送信するテキストボックス -->
-        <input id="textMessage" type="text">
+        <!-- <input id="textMessage" type="text"> -->
         <!-- 送信ボタン -->
-        <input onclick="sendMessage()" value="Send" type="button">
+        <input onclick="sendMessage()" value="Send" type="button" id="send-button">
         <!-- 接続終了ボタン -->
         <input onclick="disconnect()" value="Disconnect" type="button">
-    </form>
-    <br />
-    <!-- 出力 area -->
-    <textarea id="messageTextArea" rows="10" cols="50"></textarea>
+        <button id="reset-system-his-btn" value="Send" type="button">reset system history</button>
+        <!-- </form> -->
+        <br />
+        <!-- 出力 area -->
+        <textarea id="messageTextArea" rows="10" cols="50"></textarea>
+        <!-- <div id="content" style="text-align: center;"></div> -->
+        <div id="container" class='container'>
+            <!-- ここにメッセージが追加される -->
+        </div>
+    </div>
+
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="speech.js"></script>
 </body>
 
 </html>
