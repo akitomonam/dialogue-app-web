@@ -1,6 +1,12 @@
 # 対話システム(WEB):開発中
 対話システム用のwebアプリです。  
 WebSocketを用いてサーバーと通信を行います。
+## WEBサーバー構築
+```
+docker build -t dialogue-web-app .
+docker run --rm -d -v /home/ec2-user/dialogue-app-web:/usr/share/nginx/html/ --name dialogue_web_app -p 80:80 -p 12345:12345 dialogue-web-app #一応socket通信用のポートも開放
+docker ps
+```
 ## 使い方
 websocketのインストール
 ```
