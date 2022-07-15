@@ -1,0 +1,17 @@
+.container {
+    height: 300px;
+    background-color: gray;
+    overflow: scroll;
+    padding: 2px 4px;
+}
+
+.child {
+    height: 55px;
+    width: 90%;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+
+/* TODO:不要なコードの削除 */
